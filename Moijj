@@ -1,1 +1,79 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moijj Music</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #100d1c;
+      color: white;
+    }
+    header {
+      background: #21163b;
+      padding: 22px 15px;
+      text-align: center;
+    }
+    header h1 { color: #c4a5ff; }
+    main {
+      max-width: 600px;
+      margin: 25px auto;
+      padding: 15px;
+    }
+    .song {
+      background: #241c38;
+      padding: 18px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+    }
+    button, .download {
+      background: #a678ff;
+      color: #100d1c;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 7px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px 3px 0 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎵 Moijj Music</h1>
+    <p>Discover and enjoy new music</p>
+  </header>
+
+  <main>
+    <h2>Latest Songs</h2>
+
+    <div class="song">
+      <h3>My First Song</h3>
+      <p>Artist: Moijj</p>
+      <audio controls preload="none" style="width:100%">
+        <source src="songs/song1.mp3" type="audio/mpeg">
+      </audio>
+      <br>
+      <a class="download" href="songs/song1.mp3" download>
+        ⬇ Download Song
+      </a>
+    </div>
+
+    <p>More songs coming soon!</p>
+  </main>
+
+  <footer>
+    <p>© 2026 Moijj Music</p>
+  </footer>
+</body>
+</html>
+
